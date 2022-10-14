@@ -69,20 +69,6 @@ ul{
   position: fixed;
 }
 
-.top{
-  position:fixed;
-  float:right;
-  padding:0px;
-  margin:0px;
-  margin-top: 110px;
-  right:0;
-}
-
-#totop{
-  height:60px;
-  width: 130px;
-}
-
 #profile-pic{
   height:300px;
   width:300px;
