@@ -606,7 +606,7 @@ footer{
     display:block;
   }
   #header_big{
-    font-size: 5rem;
+    font-size: 4rem;
     margin:0;
   }
   #header-text{
@@ -704,10 +704,11 @@ footer{
   }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 850px) {
   html{background: url(pastel.gif) center fixed; 
     object-fit:cover;
     }
+
   #arrow-icon2{
       display:none;
   }
@@ -726,12 +727,12 @@ footer{
     text-align: top;
     display:block;
   }
+  
   #header_big{
     font-size: 5rem;
     margin:0;
     padding-top: 80px;
   }
-
 
   #header-text{
     flex-wrap: wrap;
@@ -823,11 +824,18 @@ footer{
 }
 }
 
-@media (min-width: 1350px) {
+@media (min-width: 1351px) {
   html{background: url(pastel.gif) center fixed; 
   object-fit: cover;
   }
 
-/* 
-max-width: 750px
-max-width: 400px phone
+@media (max-width: 1350px) {
+  #arrow-icon2{
+    display:none;
+  }
+  #arrow-icon{
+  display:none;
+  }
+}
+  
+
