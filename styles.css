@@ -8,6 +8,7 @@ html {
   scroll-behavior: smooth;
   background: url(pastel.gif) no-repeat center fixed; 
   object-fit: cover;
+  background-color: #C2D9F9;
  }
 
  a:-webkit-any-link{
@@ -835,6 +836,7 @@ footer{
   #arrow-icon{
   display:none;
   }
+  
 }
   
 
