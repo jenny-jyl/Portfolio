@@ -1,27 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen&family=Varela+Round&display=swap');
+
 header {
 	height: 80px;
 }
 
 html {
   scroll-behavior: smooth;
-  background: url(pastel.gif) no-repeat center center fixed; 
+  background: url(pastel.gif) no-repeat center fixed; 
+  object-fit: cover;
  }
 
  a:-webkit-any-link{
   text-decoration:none !important;
   }
 
-header img {
-	height: 100px;
-	margin: 10px;
-	display: inline-block;
-}
 
-nav {
-  float: right;
-}
-
-header a {
+.nav-text{
+  color: #005C95;
+  font-family: 'Silkscreen', cursive;
+  size: 30px;
+  text-shadow: 1px 1px #ebe9ec;
   font-size: 1.2rem;
 	text-decoration: none;
 	margin: 10px;
@@ -30,11 +29,18 @@ header a {
 	display: inline-block;
 }
 
-.nav-text{
-  color: #005C95;
-  font-family: 'Silkscreen', cursive;
-  size: 30px;
-  text-shadow: 1px 1px #ebe9ec;
+header img {
+  height: 9vw;
+}
+
+.nav{
+  width: 100%;
+  position: fixed;
+  float: right;
+  top:0;
+  display:flex;
+  justify-content: space-between;
+  padding: 10px 0;
 }
 
 h1 {
@@ -46,7 +52,6 @@ h1 {
 
 h2 {
   width: 100%;
-  white-space:nowrap;
   font-family: 'Silkscreen', cursive;
   color:white;
   text-shadow: 3px 3px #157bae;
@@ -57,16 +62,15 @@ h3{
   font-family: 'Silkscreen', cursive;
 }
 
+p{
+  font-family: 'Silkscreen', cursive;
+  padding: 10px;
+}
 
 ul{
   font-family: 'Silkscreen', cursive;
   color: #996cde;
   text-shadow: 1px 1px #35084f;
-}
-
-.nav{
-  width: 100%;
-  position: fixed;
 }
 
 #profile-pic{
@@ -75,7 +79,6 @@ ul{
   float: right;
   border-radius: 50%;
   margin-right:100px;
-  margin-top: 100px;
   border:3px solid #fff;
   -moz-box-shadow: 10px 10px 5px #ccc;
   -webkit-box-shadow: 10px 10px 5px #ccc;
@@ -83,24 +86,20 @@ ul{
   -moz-border-radius:25px;
   -webkit-border-radius:25px;
   border-radius:25px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10%;
 }
 
 #header-text{
-  width: 55%;
-  margin-left: 530px;
+  width: 60%;
   font-family: 'Silkscreen', cursive;
   font-size:1.2rem;
+  padding-left: 35%;
   text-align: right;
   color: #234f74;
   text-shadow: 1px 1px white;
-}
-
-#logo{
-  position: fixed;
-  padding-left: 0px;
-  margin-left: -10px;
-  margin: -15px;
-  padding-top: -30px;
 }
 
 #header_big{
@@ -108,10 +107,9 @@ ul{
   font-size: 150px;
   color:white;
   text-shadow: 4px 4px #17A0E4;
-  margin:0px;
-  margin-top: 25px;
-  white-space: nowrap;
-  margin-left: 70px;
+  margin:0;
+  padding-top: 80px;
+  padding-left: 30px;
 }
 
 .title-word {
@@ -161,18 +159,26 @@ ul{
 
 #aboutme1{
   padding-top: 40px;
-  margin-bottom: 10px;
+  margin:0;
 }
 
 #aboutme2{
-  padding-top: 40px;
-  margin-top: 5px;
+  padding-top: 10px;
+  margin:0;
 }
 
 #about-me{
-  padding-left:100px;
+  padding-left:8%;
   font-family: 'Silkscreen', cursive;
-  padding-bottom: 50px;
+  padding-top: 40px;
+}
+
+#aboutmepara1{
+  padding-top: 20px;
+}
+
+#aboutmepara2{
+  padding-bottom: -10px;
 }
 
 li{
@@ -202,31 +208,20 @@ li{
 
 ul li { 
   padding: 4px 4px; 
+  margin:0;
 }
 
-#arrow-icon{
+.arrow{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  width:100%;
+}
+
+.arrow img{
   width:90px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  padding:20px;
-}
-
-#arrow-icon2{
-  width:80px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  padding-top: -50px;
-  margin-top: -50px;
-}
-
-#aboutmepara1{
-  padding-top: 20px;
-}
-
-#aboutmepara2{
-  padding-bottom: -10px;
+  justify-content: center;
+  align-items: center;
 }
 
 .cmh-word{
@@ -264,7 +259,7 @@ ul li {
 
 
 form {
-  margin: 50px auto;
+  margin: 30px auto;
   width: 90%;
 }
 
@@ -287,15 +282,8 @@ form {
 
 .form-item{
   margin:30px;
-  justify-content: center;
-  padding: 10px;
-  padding-right: 25%;
-  text-align: right;
-}
-
-.container{
-  align-items: center;
   text-align: center;
+  padding: 5px;
 }
 
 .form-item input,
@@ -308,10 +296,17 @@ form {
     flex-basis: 50%;
 }
 
+.form-item input,
+.form-item textarea{
+  width:40vw;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .form-item button {
-  height:50px;
+  height:40px;
   width:130px;
-  margin-right: 26%;
   border: 2px solid #4262c3;
   background-color: #6a88e9;
   padding: 10px;
@@ -346,7 +341,7 @@ form {
 footer{
   align-items: center;
   justify-content: center;
-  width:100%;
+  /* width:100%; */
   padding-left: 45%;
   padding-bottom: 40px;
   padding-top: 0px;
@@ -358,23 +353,11 @@ footer{
 }
 
 .sign {
-  padding-bottom: 510px;
-  position: absolute;
-  margin:auto;
-  display: flex;
-  text-align: top;
-  justify-content: center;
-  align-items: center;
-  width: 50%;
-  height: 50%;
-  transform: translate(-50%, -50%);
-  letter-spacing: 2;
-  left: 50%;
-  top: 50%;
   font-family: "Clip";
   text-transform: uppercase;
   font-size: 6em;
   color: #ffe6ff;
+  text-align: center;
   text-shadow: 0 0 0.6rem #e6f0ff, 0 0 1.5rem #6589ff,
   -0.2rem 0.1rem 1rem #656dff, 0.2rem 0.1rem 1rem #656aff,
   0 -0.5rem 2rem #6652c7, 0 0.5rem 3rem #2b24ff;
@@ -386,6 +369,7 @@ footer{
     #2d328b,
     transparent
   );
+  margin:40px;
 }
 
 @keyframes blink {
@@ -558,10 +542,9 @@ footer{
 }
 
 .projects{
-  margin-left: 110px;
-  display: inline-block;
-  vertical-align: middle;
-  margin-top: 80px;
+  display: flex;
+  align-items:flex-start; 
+  justify-content: center;
 }
 
 .projects a{
@@ -572,12 +555,10 @@ footer{
 }
 
 .project-image{
-  height:200px;
-  width:240px;
+  height:auto;
+  width:100%;
+  object-fit:contain;
   border-radius: 50%;
-  margin-left:100px;
-  margin-right:100px;
-  margin-top: 100px;
   border:3px solid #fff;
   -moz-box-shadow: 10px 10px 5px #ccc;
   -webkit-box-shadow: 10px 10px 5px #ccc;
@@ -589,10 +570,265 @@ footer{
 
 .project{
   width: 30%;
-  flex-wrap:wrap;
   font-family: "Montserrat", sans-serif;
   color: #005C95;
   font-size: smaller;
-  display: inline-block;
   text-align: center;
+  display:flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: center;
+  margin: 40px;
 }
+
+.projecttext{
+  padding-top:5%;
+}
+
+@media (max-width: 600px) {
+  #arrow-icon2{
+      display:none;
+  }
+  #arrow-icon{
+    display:none;
+  }
+  .nav{
+    position: relative;
+    margin:0;
+  }
+
+  .nav-text{
+    font-size: 12px;
+    margin:0;
+    padding:0;
+    flex-wrap: wrap;
+    text-align: top;
+    display:block;
+  }
+  #header_big{
+    font-size: 5rem;
+    margin:0;
+  }
+  #header-text{
+    flex-wrap: wrap;
+    margin:0;
+    padding:20px;
+    width:90%;
+    font-size:0.8rem;
+    text-align:justify;
+  }
+  #logo{
+    position: relative;
+  }
+  #profile-pic{
+    height:200px;
+    width:200px;
+    margin-top: 0;
+    float:center;
+    margin-left: 100px;
+  }
+
+  #aboutme1{
+    flex-wrap: wrap;
+    font-size: 2rem;
+    text-align: center;
+  }
+  #aboutme2{
+    flex-wrap: wrap;
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  #about-me{
+    display:flex;
+  }
+
+  #title{
+    font-size: larger;
+  }
+
+  li{
+  font-size:1.2rem;
+  }
+
+  .form-item input,
+  .form-item textarea{
+  text-align: center;
+  align-content: center;
+  display:flex;
+  justify-content: center;
+  } 
+
+  .form-item input, .form-item textarea{
+  width:60vw;
+  }
+
+  #container{
+    width:100%;
+  }
+
+  #submitbutton{
+  margin-left:;
+  margin:0;
+  display: inline;
+  } 
+
+  .input-name{
+  padding: 0;
+  margin:0;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  } 
+
+  #form-item button{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+  }
+
+  .form-item{
+  padding:0;
+  }
+
+  .cmh{
+  font-size: 3rem;
+  padding:0;
+  margin:0;
+  }
+
+  footer{
+  display:flex;
+  justify-content: center;
+  padding:0;
+  }
+}
+
+@media (max-width: 800px) {
+  html{background: url(pastel.gif) center fixed; 
+    object-fit:cover;
+    }
+  #arrow-icon2{
+      display:none;
+  }
+  #arrow-icon{
+    display:none;
+  }
+  .nav{
+    position: relative;
+    margin:0;
+  }
+  .nav-text{
+    font-size: 12px;
+    margin:0;
+    padding:0;
+    flex-wrap: wrap;
+    text-align: top;
+    display:block;
+  }
+  #header_big{
+    font-size: 5rem;
+    margin:0;
+    padding-top: 80px;
+  }
+
+
+  #header-text{
+    flex-wrap: wrap;
+    margin:0;
+    padding:20px;
+    width:90%;
+    font-size:0.8rem;
+    text-align:justify;
+  }
+  #logo{
+    position: relative;
+  }
+  #profile-pic{
+    height:200px;
+    width:200px;
+    margin: 0;
+  }
+
+  #profilewrapper{
+    width:100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  #aboutme1{
+    flex-wrap: wrap;
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  #aboutme2{
+    flex-wrap: wrap;
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  #about-me{
+    padding:10px;
+    display:block;
+  }
+
+  #title{
+    font-size: larger;
+  }
+
+li{
+  font-size:1.2rem;
+}
+.form-item input,
+.form-item textarea{
+  text-align: center;
+  align-content: center;
+  width:20em;
+}
+
+.input-name{
+  padding: 0;
+  margin:0;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+#form-item button{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.form-item{
+  padding:0;
+}
+
+.form-item input,
+.form-item textarea{
+  width:60vw;
+}
+
+.cmh{
+  font-size: 3rem;
+  padding:0;
+  margin:0;
+}
+
+footer{
+  display:flex;
+  justify-content: center;
+  padding:0;
+}
+}
+
+@media (min-width: 1350px) {
+  html{background: url(pastel.gif) center fixed; 
+  object-fit: cover;
+  }
+
+/* 
+max-width: 750px
+max-width: 400px phone
