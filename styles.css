@@ -585,124 +585,7 @@ footer{
   padding-top:5%;
 }
 
-@media (max-width: 600px) {
-  #arrow-icon2{
-      display:none;
-  }
-  #arrow-icon{
-    display:none;
-  }
-  .nav{
-    position: relative;
-    margin:0;
-  }
 
-  .nav-text{
-    font-size: 12px;
-    margin:0;
-    padding:0;
-    flex-wrap: wrap;
-    text-align: top;
-    display:block;
-  }
-  #header_big{
-    font-size: 4rem;
-    margin:0;
-  }
-  #header-text{
-    flex-wrap: wrap;
-    margin:0;
-    padding:20px;
-    width:90%;
-    font-size:0.8rem;
-    text-align:justify;
-  }
-  #logo{
-    position: relative;
-  }
-  #profile-pic{
-    height:200px;
-    width:200px;
-    margin-top: 0;
-    float:center;
-    margin-left: 100px;
-  }
-
-  #aboutme1{
-    flex-wrap: wrap;
-    font-size: 2rem;
-    text-align: center;
-  }
-  #aboutme2{
-    flex-wrap: wrap;
-    font-size: 2rem;
-    text-align: center;
-  }
-
-  #about-me{
-    display:flex;
-  }
-
-  #title{
-    font-size: larger;
-  }
-
-  li{
-  font-size:1.2rem;
-  }
-
-  .form-item input,
-  .form-item textarea{
-  text-align: center;
-  align-content: center;
-  display:flex;
-  justify-content: center;
-  } 
-
-  .form-item input, .form-item textarea{
-  width:60vw;
-  }
-
-  #container{
-    width:100%;
-  }
-
-  #submitbutton{
-  margin-left:;
-  margin:0;
-  display: inline;
-  } 
-
-  .input-name{
-  padding: 0;
-  margin:0;
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  } 
-
-  #form-item button{
-    display: flex;
-    justify-content: center;
-    align-content: center;
-  }
-
-  .form-item{
-  padding:0;
-  }
-
-  .cmh{
-  font-size: 3rem;
-  padding:0;
-  margin:0;
-  }
-
-  footer{
-  display:flex;
-  justify-content: center;
-  padding:0;
-  }
-}
 
 @media (max-width: 850px) {
   html{background: url(pastel.gif) center fixed; 
@@ -822,6 +705,125 @@ footer{
   justify-content: center;
   padding:0;
 }
+}
+
+@media (max-width: 600px) {
+  #arrow-icon2{
+      display:none;
+  }
+  #arrow-icon{
+    display:none;
+  }
+  .nav{
+    position: relative;
+    margin:0;
+  }
+
+  .nav-text{
+    font-size: 12px;
+    margin:0;
+    padding:0;
+    flex-wrap: wrap;
+    text-align: top;
+    display:block;
+  }
+  #header_big{
+    font-size: 4rem;
+    margin:0;
+  }
+  #header-text{
+    flex-wrap: wrap;
+    margin:0;
+    padding:20px;
+    width:90%;
+    font-size:0.8rem;
+    text-align:justify;
+  }
+  #logo{
+    position: relative;
+  }
+  #profile-pic{
+    height:200px;
+    width:200px;
+    margin-top: 0;
+    float:center;
+    margin-left: 100px;
+  }
+
+  #aboutme1{
+    flex-wrap: wrap;
+    font-size: 2rem;
+    text-align: center;
+  }
+  #aboutme2{
+    flex-wrap: wrap;
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  #about-me{
+    display:flex;
+  }
+
+  #title{
+    font-size: larger;
+  }
+
+  li{
+  font-size:1.2rem;
+  }
+
+  .form-item input,
+  .form-item textarea{
+  text-align: center;
+  align-content: center;
+  display:flex;
+  justify-content: center;
+  } 
+
+  .form-item input, .form-item textarea{
+  width:60vw;
+  }
+
+  #container{
+    width:100%;
+  }
+
+  #submitbutton{
+  margin-left:;
+  margin:0;
+  display: inline;
+  } 
+
+  .input-name{
+  padding: 0;
+  margin:0;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  } 
+
+  #form-item button{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+  }
+
+  .form-item{
+  padding:0;
+  }
+
+  .cmh{
+  font-size: 3rem;
+  padding:0;
+  margin:0;
+  }
+
+  footer{
+  display:flex;
+  justify-content: center;
+  padding:0;
+  }
 }
 
 @media (min-width: 1351px) {
