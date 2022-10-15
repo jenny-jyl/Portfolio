@@ -727,10 +727,12 @@ footer{
     text-align: top;
     display:block;
   }
+
   #header_big{
     font-size: 4rem;
     margin:0;
   }
+
   #header-text{
     flex-wrap: wrap;
     margin:0;
@@ -747,7 +749,6 @@ footer{
     width:200px;
     margin-top: 0;
     float:center;
-    margin-left: 100px;
   }
 
   #aboutme1{
@@ -759,10 +760,6 @@ footer{
     flex-wrap: wrap;
     font-size: 2rem;
     text-align: center;
-  }
-
-  #about-me{
-    display:flex;
   }
 
   #title{
