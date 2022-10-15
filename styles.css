@@ -706,7 +706,12 @@ footer{
   justify-content: center;
   padding:0;
 }
+
+#projectheading{
+  font-size: 4rem;
 }
+}
+
 
 @media (max-width: 600px) {
   #arrow-icon2{
@@ -821,6 +826,11 @@ footer{
   display:flex;
   justify-content: center;
   padding:0;
+  }
+
+#projectheading{
+    font-size: 4rem;
+    ;
   }
 }
 
